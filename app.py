@@ -1,5 +1,3 @@
-import random
-import os
 from re import A
 import numpy as np
 import librosa
@@ -8,25 +6,13 @@ import pyrebase
 import matplotlib.pyplot as plot
 from flask import Flask, request, jsonify
 from tensorflow.keras.models import load_model
-from pydub import AudioSegment
-from scipy.io import wavfile
-import IPython.display as ipd
-import wavio
 import firebase_admin
 from firebase_admin import credentials, firestore
-import argparse
-import array
-import math
-import wave
-import cloudconvert
 import requests
 import numpy as np
 from matplotlib.pyplot import figure
 from scipy.signal import savgol_filter, find_peaks,butter,hilbert, filtfilt
-import sys
-import contextlib
 import timeit
-from threading import Thread
 import multiprocessing as mp
 
 app = Flask(__name__)
